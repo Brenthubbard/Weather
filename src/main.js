@@ -15,7 +15,7 @@ $(document).ready(function() {
 
 
     let request = new XMLHttpRequest();
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${city},${state},${country}&appid=${process.env.API_KEY}`;
+    const url = `http://api.openweathermap.org/data/2.5/weather?q=${Boise},${Idaho},${USA}&appid=${process.env.API_KEY}`;
 
     request.onreadystatechange = function() {
       if (this.readyState === 4 && this.status === 200) {
